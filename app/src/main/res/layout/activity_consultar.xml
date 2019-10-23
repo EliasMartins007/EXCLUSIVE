@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Telas_Clientes">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <EditText
+            android:id="@+id/eText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="DIGITE NOME DA CLIENTE"
+            android:inputType="textCapCharacters"
+            android:singleLine="true"
+            android:textColor="#000999"
+            android:theme="@style/MyEditTextTheme" />
+
+        <Button
+            android:id="@+id/buttonVoltar"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:text="Voltar"
+            android:textColor="#276bea" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listViewClientes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

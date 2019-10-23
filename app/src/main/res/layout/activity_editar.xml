@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:background="@color/Telas_Clientes">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDadosDaCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DADOS DA CLIENTE"
+                android:textColor="#0055FF"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/EditarCodigo"
+                android:id="@+id/textViewCodigo" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextCodigo"
+                android:editable="false"/>
+
+
+            <TextView
+                android:id="@+id/textViewNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CadastrarNome"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editTextNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapCharacters"
+                android:singleLine="true"
+                android:textColor="#000999" /><!--para definir campo texto como maiusculo 18/12/2018 -->
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CEP"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/edtCEP"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:hint="DIGITE CEP DA CLIENTE"
+                android:inputType="number|textCapCharacters"
+                android:singleLine="true"
+                android:textColor="#000999"
+                android:theme="@style/MyEditTextTheme" />
+
+
+            <Button
+                android:id="@+id/btcep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesquisar" />
+
+
+
+
+            <TextView
+                android:id="@+id/textViewEndereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CadastrarEndereco"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editTextEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+
+
+            <TextView
+                android:id="@+id/textViewTelefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <EditText
+                android:id="@+id/edtTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:singleLine="true" />
+
+
+
+            <TextView
+                android:id="@+id/textViewSexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CadastrarSexo"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupSexo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMasculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false"
+                    android:text="Masculino" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFeminino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Feminino" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textViewDataNascimento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Nascimento:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editTextDataNascimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/textViewEstadoCivil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado Civil"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/spinnerEstadoCivil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <TextView
+                android:id="@+id/textViewServico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Servico"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/spinnerServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/textViewDadosDoServico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DADOS DO SERVIÇO"
+                android:textColor="#0055FF"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+
+            <TextView
+                android:id="@+id/NomeViewServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TIPO DO CABELO" />
+
+            <EditText
+                android:id="@+id/editTextTipoCabeloEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Digite o Tipo do cabelo da Cliente"
+                /><!--CONFIRMAR COM A NATHALYA SE SERA NOME DO CABELO ???? 15/07/2019-->
+
+            <TextView
+                android:id="@+id/textViewGramas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GRAMAS" />
+
+            <EditText
+                android:id="@+id/editTextGramasEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Digite as Gramas do Cabelo da Cliente"
+                />
+
+            <TextView
+                android:id="@+id/textViewCentimetros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CENTÍMETRO" />
+
+            <EditText
+                android:id="@+id/editTextCentimetrosEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Digite os Centímetros do cabelo da Cliente"
+                />
+
+            <TextView
+                android:id="@+id/textViewManutencoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MANUTENÇÕES" />
+
+            <EditText
+                android:id="@+id/editTextManutencoesEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Digite o número de Manutenções"
+                />
+            <!--duvida quanto a essas manutenções confirmar com a NATHALYA-->
+
+            <CheckBox
+                android:id="@+id/checkBoxRegistroAtivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Registro Ativo" />
+
+            <TextView
+                android:id="@+id/textOBSERVACAO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observação"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <EditText
+                android:id="@+id/editTextObservacaoEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="EX: seviço ofertado 30cm R$300,00"
+                android:inputType="textMultiLine"
+                android:theme="@style/MyEditTextTheme" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical">
+                <!--android:layout_marginTop="300dp" que defini a posição vertical do meu layout 27/06/2019-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imgfoto"
+                        android:layout_width="145dp"
+                        android:layout_height="134dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/foto_cliente" />
+
+
+                    <ImageButton android:id="@+id/btfoto1"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tipo_d" />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:id="@+id/btExcluir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dip"
+                        android:onClick="onClick"
+                        android:src="@android:drawable/ic_menu_delete" />
+
+                    <Button
+                        android:id="@+id/buttonVoltar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignTop="@+id/buttonSalvar"
+                        android:layout_marginLeft="95dp"
+                        android:layout_marginStart="95dp"
+                        android:text="@string/voltar" />
+
+                    <Button
+                        android:id="@+id/buttonAlterar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/buttonVoltar"
+                        android:layout_toRightOf="@+id/buttonVoltar"
+                        android:text="@string/Alterar" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

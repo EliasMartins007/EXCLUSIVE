@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">EXCLUSIVE EXTENSÕES CAPILARES</string>
+
+    <string name="textoTelaLogin">EXTENSÕES CAPILARES</string>
+    <string name="dica_tela1usuario">Usuário</string>
+    <string name="dicatela1_senha">Senha</string>
+
+
+
+    <string name="salvar">Salvar</string>
+    <string name="voltar">Voltar</string>
+    <string name="nome_obrigatorio">O nome é de preenchimento obrigatório !!!</string>
+    <string name="endereco_obrigatorio">O endereço é de preenchimento obrigatório !!!</string>
+    <string name="email_obrigatorio">O email é de preenchimento obrigatório !!!</string>
+    <string name="telefone_obrigatorio">O telefone é de preenchimento obrigatório !!!</string>
+    <string name="sexo_obrigatorio">O sexo é de preenchimento obrigatório !!!</string>
+    <string name="data_nascimento_obrigatorio">A data de nascimento é de preenchimento obrigatório !!!</string>
+    <string name="registro_salvo_sucesso">Registro salvo com sucesso !!!</string>
+    <string name="Alterar">Alterar</string>
+
+    <string name="CadastrarNome">Nome:</string>
+    <string name="CadastrarEndereco">Endereço:</string>
+    <string name="CadastrarSexo">Sexo:</string>
+
+    <string name="EditarCodigo">Código:</string>
+    <string name="EditarNome">Nome:</string>
+    <string name="EditarEndereco">Endereço:</string>
+    <string name="EditarSexo">Sexo:</string>
+    <string name="EditarDataNascimento"></string>
+
+
+    <string name="direitos">TODOS OS DIREITOS RESERVADOS</string>
+    <string name="copyright">COPYRIGHT© 2019</string>
+
+
+    <string name="TextView">www.devmedia.com.br</string>
+
+
+
+    <string name="Editar_cliente_Tela_Editar">Editar</string>
+
+
+    <!--tela produtos  17/07/2019-->
+    <string name="produto_2">Nome do Produto</string>
+    <string name="valor_2">Valor Unitário</string>
+    <string name="valor_total_2">Valor Total</string>
+    <string name="quantidade_2">Qte</string>
+
+
+
+</resources>

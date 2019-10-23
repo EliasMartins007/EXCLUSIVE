@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Codigo"
+            android:id="@+id/textViewCodigo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" - "
+            android:id="@+id/textViewTracoCodigo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nome"
+            android:id="@+id/textViewNome" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Endereco"
+        android:id="@+id/textViewEndereco" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email"
+        android:id="@+id/textViewEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Telefone"
+        android:id="@+id/textViewTelefone" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sexo"
+            android:id="@+id/textViewSexo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" - "
+            android:id="@+id/TracoSexo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="EstadoCivil"
+            android:id="@+id/textViewEstadoCivil" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nasc"
+            android:id="@+id/textViewNascimento" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" - "
+            android:id="@+id/textViewTracoNascimento" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Registro Ativo "
+            android:id="@+id/textViewRegistroAtivo" />
+
+        <TextView
+            android:id="@+id/textViewServico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro Ativo : "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textViewTipoCabelo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TipoCabelo"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <TextView
+                android:id="@+id/textViewGramas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gramas"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <TextView
+                android:id="@+id/textViewCM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CM"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <TextView
+                android:id="@+id/textViewManutencoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manutenções"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+                android:id="@+id/textViewObservacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observação : "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excluir"
+            android:id="@+id/buttonExcluir"
+            android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/buttonEditar"
+            android:layout_toStartOf="@+id/buttonEditar"
+            android:layout_marginRight="29dp"
+            android:layout_marginEnd="29dp"
+            android:layout_alignBottom="@+id/buttonEditar"
+            android:textColor="#276bea"
+            android:visibility="invisible"/>
+<!--android:visibility="invisible"  quando for altera excluir 08/07/2019-->
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="@string/Editar_cliente_Tela_Editar"
+            android:id="@+id/buttonEditar"
+            android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="#276bea"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
